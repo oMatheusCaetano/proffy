@@ -19,6 +19,8 @@
   },
   "plugins": ["react", "@typescript-eslint", "react-hooks"],
   "rules": {
+    "no-shadow": "off",
+    "react/prop-types": "off",
     "react/button-has-type": "off",
     "import/no-extraneous-dependencies": "off",
     "react-hooks/rules-of-hooks": "error",

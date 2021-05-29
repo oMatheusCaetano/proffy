@@ -1,11 +1,15 @@
 import React from 'react';
 
+import Text from '@/components/atoms/text/Text';
+
 import {
   Container,
 } from './styles';
 
-const Dashboard: React.FC = () => (
-  <Container />
+const Hero: React.FC = () => (
+  <Container>
+    <Text>asdasda lkajsdkasd kalsldada alksadalkds adsd</Text>
+  </Container>
 );
 
-export default Dashboard;
+export default Hero;
