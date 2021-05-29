@@ -35,6 +35,7 @@ export default createGlobalStyle`
   h2 {
     font-size: 36px;
     font-family: Archivo, sans-serif;
+    color: white; 
   }
 
   h4 {

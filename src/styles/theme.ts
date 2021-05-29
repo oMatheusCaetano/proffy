@@ -1,19 +1,33 @@
 import baseStyled, { ThemedStyledInterface } from 'styled-components';
 
-export const theme = {
-  breakpoints: {
-    default: { min: '1px', max: '639px' },
-    small: { min: '640px', max: '767' },
-    medium: { min: '768px', max: '1023px' },
-    large: { min: '1024px', max: '1279px' },
-    extraLarge: { min: '1280px', max: '1535px' },
-    xExtraLarge: { min: '1536px', max: '' },
-  },
+export enum ThemeBreakpoints {
+  defaultMin = '1px',
+  defaultMax = '639px',
 
-  colors: {
-    text: '#6a6180',
-    textLighten: '#d4c2ff',
-  },
+  smallMin = '640px',
+  smallMax = '767px',
+
+  mediumMin = '768px',
+  mediumMax = '1023px',
+
+  largeMin = '1024px',
+  largeMax = '1279px',
+
+  extraLargeMin = '1280px',
+  extraLargeMax = '1535px',
+
+  xExtraLargeMin = '1536px',
+  xExtraLargeMax = '',
+}
+
+export enum ThemeColors {
+  text = '#6a6180',
+  textLighten = '#d4c2ff',
+}
+
+export const theme = {
+  breakpoints: ThemeBreakpoints,
+  colors: ThemeColors,
 };
 
 export type Theme = typeof theme;
