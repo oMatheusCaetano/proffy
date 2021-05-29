@@ -7,11 +7,14 @@ export enum AvailableIcons {
 interface IconProps extends InputHTMLAttributes<HTMLImageElement> {
   iconName: AvailableIcons
   size?: number
-  alt?: string
+  alt?: string,
+  className?: string,
 }
 
-const Icon: React.FC<IconProps> = ({ iconName, size, alt = '' }) => (
-  <img src={`/icons/${iconName}`} alt={alt} width={size} />
+const Icon: React.FC<IconProps> = ({
+  iconName, size, alt = '', className,
+}) => (
+  <img src={`/icons/${iconName}`} alt={alt} width={size} className={className} />
 );
 
 export default Icon;

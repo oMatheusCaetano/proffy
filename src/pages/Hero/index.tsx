@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Text from '@/components/atoms/text/Text';
+import { AvailableIcons } from '@/components/atoms/img/Icon';
+import Button from '@/components/atoms/button/Button';
 
 import {
   Container,
@@ -8,7 +9,9 @@ import {
 
 const Hero: React.FC = () => (
   <Container>
-    <Text>asdasda lkajsdkasd kalsldada alksadalkds adsd</Text>
+    <Button iconName={AvailableIcons.logo}>
+      asdasda lkajsdkasd kalsldada alksadalkds adsd
+    </Button>
   </Container>
 );
 

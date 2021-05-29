@@ -39,7 +39,6 @@ export default createGlobalStyle`
   }
 
   h4 {
-    font-size: 24px;
     font-family: Archivo, sans-serif;
   }
 

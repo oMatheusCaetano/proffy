@@ -23,11 +23,19 @@ export enum ThemeBreakpoints {
 export enum ThemeColors {
   text = '#6a6180',
   textLighten = '#d4c2ff',
+
+  primary = '#8257E5',
+  success = '#04BF58',
+}
+
+export enum Params {
+  borderRadius = '8px',
 }
 
 export const theme = {
   breakpoints: ThemeBreakpoints,
   colors: ThemeColors,
+  ...Params,
 };
 
 export type Theme = typeof theme;

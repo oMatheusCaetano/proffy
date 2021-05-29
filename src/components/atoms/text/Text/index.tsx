@@ -5,8 +5,8 @@ import { Container } from './styles';
 
 type Props = { color?: ThemeColors }
 
-const Icon: React.FC<Props> = ({ children, color = ThemeColors.text }) => (
+const Text: React.FC<Props> = ({ children, color = ThemeColors.text }) => (
   <Container color={color}>{children}</Container>
 );
 
-export default Icon;
+export default Text;
