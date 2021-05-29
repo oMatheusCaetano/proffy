@@ -2,8 +2,12 @@ import React from 'react';
 
 import { Container } from './styles';
 
-const Icon: React.FC = ({ children }) => (
-  <Container>{children}</Container>
+type Props = {
+  lighten?: boolean
+}
+
+const Icon: React.FC<Props> = ({ children, lighten }) => (
+  <Container lighten={lighten}>{children}</Container>
 );
 
 export default Icon;

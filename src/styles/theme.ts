@@ -12,6 +12,7 @@ export const theme = {
 
   colors: {
     text: '#6a6180',
+    textLighten: '#d4c2ff',
   },
 };
 
