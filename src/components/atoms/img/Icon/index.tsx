@@ -6,6 +6,8 @@ export enum AvailableIcons {
   tv = 'tv.svg',
   study = 'study.svg',
   heart = 'heart.svg',
+  arrowLeft = 'arrow-left.svg',
+  whatsapp = 'whatsapp.svg',
 }
 
 interface IconProps extends InputHTMLAttributes<HTMLImageElement> {

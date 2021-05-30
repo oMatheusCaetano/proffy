@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
   const [quantityOfConnections, setQuantityOfConnections] = useState(0);
 
   useEffect(() => {
-    function loadQuantityOfConnections() {
+    async function loadQuantityOfConnections() {
       setQuantityOfConnections(1389);
     }
 
@@ -43,10 +43,15 @@ const Hero: React.FC = () => {
 
       <ButtonContainer>
         <div>
-          <StyledButton big background={ThemeColors.primaryLighten} iconName={AvailableIcons.study}>
+          <StyledButton
+            bigger
+            background={ThemeColors.primaryLighten}
+            iconName={AvailableIcons.study}
+            to="/proffys"
+          >
             Estudar
           </StyledButton>
-          <StyledButton big iconName={AvailableIcons.tv}>
+          <StyledButton bigger iconName={AvailableIcons.tv}>
             Dar aulas
           </StyledButton>
         </div>

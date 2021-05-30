@@ -1,12 +1,13 @@
+import { Link } from 'react-router-dom';
 import { css } from 'styled-components';
 import { styled, ThemeColors } from '@/styles/theme';
 import { darken } from 'polished';
 
 import Icon from '@/components/atoms/img/Icon';
 
-export interface ContainerProps { background: ThemeColors, big: boolean }
+export interface ContainerProps { background: ThemeColors, bigger: boolean }
 
-export const Container = styled.button<ContainerProps>`
+export const Container = styled(Link)<ContainerProps>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,6 +20,7 @@ export const Container = styled.button<ContainerProps>`
   height: 56px;
   padding: 0 40px;
   font-family: Archivo, Poppins, sans-serif;
+  text-decoration: none;
   transition: .3s;
 
   &:hover {
@@ -29,7 +31,7 @@ export const Container = styled.button<ContainerProps>`
     font-family: Archivo, Poppins, sans-serif;
   }
 
-  ${({ big }) => big && css`
+  ${({ bigger }) => bigger && css`
     span {
       font-size: 24px;
     }

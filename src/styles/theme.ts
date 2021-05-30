@@ -26,10 +26,16 @@ export enum ThemeBreakpoints {
 export enum ThemeColors {
   text = '#6a6180',
   textLighten = '#d4c2ff',
+  title = '#32264D',
 
   primary = '#8257E5',
   primaryLighten = '#9871F5',
   success = '#04BF58',
+  background = '#F0F0F7',
+  background2 = '#FAFAFC',
+  background3 = '#FFF',
+
+  border = '#E6E6F0',
 }
 
 export enum Params {
