@@ -18,10 +18,15 @@ export const Container = styled.button<ContainerProps>`
   border-radius: ${({ theme }) => theme.borderRadius};
   height: 56px;
   padding: 0 40px;
+  font-family: Archivo, Poppins, sans-serif;
   transition: .3s;
 
   &:hover {
     background: ${({ background }) => darken(0.1, background)};
+  }
+
+  span {
+    font-family: Archivo, Poppins, sans-serif;
   }
 
   ${({ big }) => big && css`
