@@ -8,13 +8,14 @@ import { Container, StyledIcon } from './styles';
 type Props = {
   background?: ThemeColors,
   iconName?: AvailableIcons,
-  big?: boolean
+  big?: boolean,
+  className?: string,
 }
 
 const Button: React.FC<Props> = ({
-  children, iconName, background = ThemeColors.success, big = false,
+  children, iconName, className, background = ThemeColors.success, big = false,
 }) => (
-  <Container background={background} big={big}>
+  <Container className={className} background={background} big={big}>
     {iconName && <StyledIcon iconName={iconName} size={big ? 56 : 36} />}
     <span>{children}</span>
   </Container>

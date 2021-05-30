@@ -9,6 +9,7 @@ export interface ContainerProps { background: ThemeColors, big: boolean }
 export const Container = styled.button<ContainerProps>`
   display: flex;
   align-items: center;
+  justify-content: center;
   line-height: 26px;
   color: white;
   font-weight: bold;
@@ -33,5 +34,5 @@ export const Container = styled.button<ContainerProps>`
 `;
 
 export const StyledIcon = styled(Icon)`
-  margin-right: 15px;
+  margin-right: 20px;
 `;

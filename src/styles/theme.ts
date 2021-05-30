@@ -2,7 +2,10 @@ import baseStyled, { ThemedStyledInterface } from 'styled-components';
 
 export enum ThemeBreakpoints {
   defaultMin = '1px',
-  defaultMax = '639px',
+  defaultMax = '499px',
+
+  extraSmallMin = '500px',
+  extraSmallMax = '639px',
 
   smallMin = '640px',
   smallMax = '767px',
@@ -25,6 +28,7 @@ export enum ThemeColors {
   textLighten = '#d4c2ff',
 
   primary = '#8257E5',
+  primaryLighten = '#9871F5',
   success = '#04BF58',
 }
 

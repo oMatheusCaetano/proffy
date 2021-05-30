@@ -1,7 +1,11 @@
 import React, { InputHTMLAttributes } from 'react';
 
 export enum AvailableIcons {
-  logo = 'logo.svg'
+  logo = 'logo.svg',
+  hero = 'hero.svg',
+  tv = 'tv.svg',
+  study = 'study.svg',
+  heart = 'heart.svg',
 }
 
 interface IconProps extends InputHTMLAttributes<HTMLImageElement> {

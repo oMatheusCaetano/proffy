@@ -1,8 +1,9 @@
 import { styled, ThemeColors } from '@/styles/theme';
+import { TextSize } from '.';
 
-export interface ContainerProps { color?: ThemeColors }
+export interface ContainerProps { color?: ThemeColors, size: TextSize }
 
 export const Container = styled.p<ContainerProps>`
-  line-height: 26px;
+  font-size: ${({ size }) => size};
   color: ${({ color }) => color};
 `;
